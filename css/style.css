@@ -1,0 +1,807 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+.text_center{
+	text-align: center;
+}
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+/*---------------------
+mainbg
+---------------------*/
+
+.mainbg_box{
+	background-image: url(../img/mainbg.png);
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 7.84px;
+}
+
+.mainbg_box_title{
+	font-size: 48px;
+	color: #fff;
+}
+
+.mainbg_box_text{
+	font-size: 36px;
+	color: #fff;
+}
+
+
+/*---------------------
+header
+---------------------*/
+
+.header__wrapper{
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: solid 2px;
+	border-color: #efefef;
+
+}
+
+.header_logo{
+	width: 300px;
+}
+
+.header_logo_s{
+	width: 50%;
+}
+
+.btn-trigger{
+	display: none;
+}
+
+.navi_list{
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navi_item{
+	font-size: 21px;
+	color: black;
+}
+
+
+/*---------------------
+about
+---------------------*/
+
+.profile{
+	padding: 120px 0 80px 0;
+}
+
+.profile_wrapper{
+	width: 960px;
+	margin: auto;
+}
+
+.profile_title{
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffd61a;
+	margin-bottom: 24px;
+}
+
+.profile_title_a{
+	margin-bottom: 64px;
+}
+
+.profile_title_b{
+	margin-bottom: 40px;
+}
+
+
+
+/*---------------------
+slide
+---------------------*/
+
+.slide_wrapper{
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+
+/*---------------------
+course
+---------------------*/
+
+.course{
+	width: 960px;
+	margin:auto;
+}
+
+.course_wrapper{
+	width: 960px;
+	margin:auto;
+	padding: 64px 0;
+}
+
+.course_title{
+	font-size: 24px;
+	color: #222222;
+}
+
+.image_box1{
+	display: flex;
+}
+
+.image_box2{
+	display: flex;
+}
+
+.image_box_image{
+	width: 50%;
+}
+
+.image_box_image img{
+	width: 100%;
+	height: 100%;
+}
+
+.image_box_text_right{
+	width: 50%;
+	padding: 0 200px 0 48px;
+	display: flex;
+	justify-content: center;
+}
+
+.image_box_text_left{
+	width: 50%;
+	padding: 0 48px 0 200px;
+	display: flex;
+	justify-content: center;
+}
+
+.image_box_text_s{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.image_box_course_title{
+	font-size: 24px;
+	color: #222222;
+	padding-bottom: 40px;
+}
+
+
+/*---------------------
+news
+---------------------*/
+
+.news{
+	padding: 64px 0 48px 0;
+}
+
+.news_wrapper{
+	width: 960px;
+	margin:auto;
+}
+
+.news_title_wrapper{
+	margin-bottom:64px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.news_title{
+	font-size: 24px;
+	color: #ffd61a;
+}
+
+.work_list_wrapper{
+	width: 960px;
+	margin-bottom: 56px;
+}
+
+.work_list{
+	display: flex;
+}
+
+.work_item{
+	width: 33.33%;
+	padding: 0 5px;
+}
+
+.work_eyecatch{
+	padding-bottom: 32px;
+}
+
+.works_contents{
+	width: 100%;
+}
+
+.work_date{
+	padding-bottom: 24px;
+}
+
+
+.btn{
+	display: block;
+	width: 300px;
+	margin: auto;
+	padding: 19.5px 0;
+	background-color: #ffd61a;
+	color: #fff;
+	font-size: 21px;
+}
+
+
+/*---------------------
+access
+---------------------*/
+
+.access{
+	padding: 64px 0 80px 0;
+	background-color: #fafafa
+}
+
+.access_wrapper{
+	width: 960px;
+	margin: auto;
+}
+
+.access_title_wrapper{
+	margin-bottom: 64px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.access_title{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.google_map{
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.google_map iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.access_detail{
+	padding-top: 30px;
+	width: 650px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 200px;
+}
+
+.access_detail_title{
+	width: 100px;
+	margin: 0 48px 24px 0;
+	text-align: left;
+}
+
+.access_detail_item{
+	width: 500px;
+	margin: 0 0 24px 0;
+}
+
+/*---------------------
+contact
+---------------------*/
+
+.contact{
+	padding: 64px 0 80px 0;
+}
+
+.contact_wrapper{
+	width: 960px;
+	margin: auto;
+}
+
+.contact_title_wrapper{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.contact_title{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.contact_title_text{
+	margin-bottom: 64px;
+}
+
+.contact_detail{
+	margin-bottom: 32px;
+}
+
+.form_inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 64px 0 40px 200px;
+}
+
+.form_title{
+    width: 152px;
+    margin-right: 120px;
+    padding: 6px 0 24px 0;
+    text-align: right;
+}
+
+.form_title.check_radio{
+    padding: 0;
+}
+
+.form_item{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	margin-bottom: 24px;
+	padding: 0 0 8px;
+}
+
+.form_parts{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    font:solid 1px #333;
+    font-size: 16px;
+}
+
+.form-label{
+    padding: 0 0 24px 0;
+    font-size: 14px;
+}
+
+input[type*="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+	margin: 0 40px 0 0;
+    border: solid 1px #333;
+	background-color: #f0ebe5;
+    border-radius:4px;
+}
+
+input[type*="checkbox"]:checked{
+    background-color: #ffd61a;
+}
+
+.btn-submit{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border:none; 
+}
+
+
+
+/*---------------------
+footer
+---------------------*/
+
+.footer{
+    padding: 32px 0;
+    background-color: #707070;
+}
+
+.footer_wrapper{
+    position: relative;
+}
+
+.btn-pagetop{
+    position: absolute;
+    top: -90px;
+    right: 200px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #707070;   
+}
+
+.copyrights{
+    color: #fff;
+	font-size: 18px;
+}
+
+.icon-up{
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+/*---------------------
+header
+---------------------*/
+
+.header{
+	position: fixed;
+	top:0;
+	width: 100%;
+	background-color: #fff;
+}
+
+.header__wrapper{
+	display: block;
+	height: 64px;
+}
+
+.header_logo{
+	padding: 24px 0;
+}
+
+.btn-trigger{
+	appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	position: fixed;
+	top: 16px;
+	right: 12px;
+	width: 30px;
+	padding: 0;
+	border: none;
+	background-color:transparent;
+	box-shadow: none;
+	outline: none;
+	-webkit-tap-highligt-color:rgba(0,0,0,0);
+}
+
+/*---------------------
+.btn-trigger.active use:nth-of-type(1){
+	transform:translateY(30px) rotate(-45deg);
+}
+
+.btn-trigger.active use:nth-of-type(2){
+	opacity:0;
+}
+
+.btn-trigger.active use:nth-of-type(3){
+	transform:translateY(35px) rotate(-15px);
+}
+---------------------*/
+
+.navigation{
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(120,208,253,0.8);
+}
+
+
+.navi_list{
+	display: block;
+	padding: 84px 0 0;
+}
+
+.navi_item{
+	margin: 0 0 60px;
+	text-align: center;
+}
+
+
+
+/*---------------------
+mainbox
+---------------------*/
+
+.mainbg_box{
+	margin: 64px 0 0;
+	height: 200px;
+}
+
+.mainbg_box_title{
+	font-size: 24px;
+}
+
+.mainbg_box_text{
+	font-size: 18px;
+}
+
+/*---------------------
+about
+---------------------*/
+
+.profile_wrapper{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+.profile{
+	padding: 50px 0 30px;
+}
+
+.profile_title{
+	margin: 0 0 15px;
+}
+
+.profile_title_a{
+	margin-bottom: 30px;
+}
+
+.profile_title_b{
+	margin-bottom: 20px;
+}
+
+/*---------------------
+slide
+---------------------*/
+
+.slide_wrapper{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.slide_wrapper img{
+	width: 50%;
+}
+
+/*---------------------
+course
+---------------------*/
+
+.course{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+.course_wrapper{
+	width: 100%;
+	padding: 30px 10px;
+}
+
+.image_box1{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image_box_image{
+	width: 100%;
+	padding: 0 10px;
+}
+
+.image_box_text_right{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+}
+
+.image_box2{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.image_box_text_left{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+}
+
+/*---------------------
+news
+---------------------*/
+
+.news{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+.news_wrapper{
+	width: 100%;
+	padding: 30px 10px;
+}
+
+.work_list_wrapper{
+	width: 100%;
+}
+
+.work_list{
+	display: block;
+	margin: 0 0 20px;
+}
+
+.work_item{
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+.work_eyecatch{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+.work_contents{
+	width: 100%;
+	padding: 0 10px;
+}
+
+.work_date{
+	padding-bottom: 10px;
+	margin: auto;
+}
+
+.btn{
+	display: block;
+	width: 300px;
+	margin: auto;
+	padding: 10px 0;
+	background-color: #ffd61a;
+	color: #fff;
+	font-size: 21px;
+}
+
+
+/*---------------------
+access
+---------------------*/
+
+.access{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+.access_wrapper{
+	width: 100%;
+	padding: 30px 10px;
+}
+
+.access_detail{
+	padding-top: 30px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 10px;
+}
+
+.access_detail_title{
+	width: 100px;
+	margin: 0 10px 24px 0;
+	text-align: left;
+}
+
+.access_detail_item{
+	width: 250px;
+	margin: 0 0 24px 0;
+}
+
+/*---------------------
+contact
+---------------------*/
+
+.contact{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+}
+
+.contact_wrapper{
+	width: 100%;
+	padding: 30px 10px;
+}
+
+.form_inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 64px 0 40px 10px;
+}
+
+.form_title{
+    width: 100%;
+    margin: 0 10px;
+    padding: 6px 0 10px 0;
+    text-align: left;
+}
+
+.form_item{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 10px;
+	padding: 0 0 8px;
+}
+
+input[type*="checkbox"]{
+	margin: 0 10px 0 0;
+}
+
+/*---------------------
+footer
+---------------------*/
+
+.footer{
+    padding: 20px 0;
+} 
+
+.btn-pagetop{
+    position: absolute;
+    top: -52px;
+    right: 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #707070;   
+}
+
+.copyrights{
+	font-size: 12px;
+}
+
+.icon-up{
+    display: block;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+}
